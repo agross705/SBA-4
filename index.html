@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="style.css" rel="stylesheet" />
+
+    <title>SBA 4 | Task Management App</title>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h1>Task Management App</h1>
+        <p>Organize tasks by category, deadline, and status</p>
+      </header>
+
+      <!-- Task Input Section -->
+      <section class="taskForm">
+        <h2>Add New Task</h2>
+
+        <!-- Task Name -->
+        <input type="text" id="taskName" placeholder="Task name" />
+
+        <!-- Category -->
+        <input type="text" id="taskCategory" placeholder="Category" />
+
+        <!-- Deadline -->
+        <input type="date" id="taskDeadline" />
+
+        <!-- Initial Status -->
+        <select id="taskStatus">
+          <option value="Not Started">Not Started</option>
+          <option value="In Progress">In Progress</option>
+          <option value="Completed">Completed</option>
+        </select>
+      </section>
+    </main>
+
+    <footer>
+      &copy; 2026 Coded by <a href="https://github.com/agross705">agross705</a>.
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

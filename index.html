@@ -21,13 +21,13 @@
         <h2>Add New Task</h2>
 
         <!-- Task Name -->
-        <input type="text" id="taskName" placeholder="Task name" />
+        <input type="text" id="taskName" placeholder="Task name" required />
 
         <!-- Category -->
-        <input type="text" id="taskCategory" placeholder="Category" />
+        <input type="text" id="taskCategory" placeholder="Category" required />
 
         <!-- Deadline -->
-        <input type="date" id="taskDeadline" />
+        <input type="date" id="taskDeadline" required />
 
         <!-- Initial Status -->
         <select id="taskStatus">
@@ -38,6 +38,31 @@
 
         <!-- Add Task Button -->
         <button id="addTaskBtn">Add Task</button>
+
+        <!-- Feeback Message -->
+        <p id="message"></p>
+      </section>
+
+      <!-- Filter Section -->
+      <section class="filters">
+        <h2>Filter Tasks</h2>
+
+        <!-- Filter by Status -->
+        <select id="statusFilter">
+          <option value="All">All Statuses</option>
+          <option value="Not Started">Not Started</option>
+          <option value="In Progress">In Progress</option>
+          <option value="Completed">Completed</option>
+          <option value="Overdue">Overdue</option>
+        </select>
+
+        <!-- Filter by Category -->
+        <select id="categoryFilter">
+          <option value="All">All Categories</option>
+        </select>
+
+        <!-- Clear Task List Button -->
+        <button id="clearTasksBtn">Clear Task List</button>
       </section>
 
       <!-- Task List Section -->
@@ -45,19 +70,20 @@
         <h2>Tasks</h2>
 
         <!-- Table used for clear data display -->
-         <table>
+        <table>
           <thead>
             <tr>
               <th>Name</th>
               <th>Category</th>
               <th>Deadline</th>
               <th>Status</th>
+              <th>Update Status</th>
             </tr>
           </thead>
           <tbody id="taskTableBody">
             <!-- Tasks will be inserted dynamically here -->
           </tbody>
-         </table>
+        </table>
       </section>
     </main>
 

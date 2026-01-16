@@ -1,0 +1,94 @@
+body {
+  background-color: silver;
+  margin: 0;
+}
+main {
+  background-color: silver;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  height: 100%;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+section {
+  background: white;
+  padding: 50px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+}
+
+button {
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: indigo;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.completed {
+  color: green;
+  font-weight: bold;
+}
+
+.overdue {
+  color: red;
+  font-weight: bold;
+}
+
+.not-started {
+  color: #555;
+  font-style: italic;
+}
+
+.in-progress {
+  color: orange;
+  font-style: italic;
+}
+
+#clearTasksBtn {
+  background-color: crimson;
+  margin-top: 10px;
+}
+
+#clearTasksBtn:hover {
+  background-color: darkred;
+}
+
+footer {
+  background-color: cyan;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  position: fixed;
+}
